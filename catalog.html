@@ -30,15 +30,14 @@ shop/images/preview.jpg"
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
             <li class="site-nav__item">
-              <a
-                class="site-nav__link site-nav__link--active"
-                href="index.html"
-              >
-                Главная
-              </a>
+              <a class="site-nav__link" href="index.html"> Главная </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link" href="catalog.html">Каталог</a>
+              <a
+                class="site-nav__link site-nav__link--active"
+                href="catalog.html"
+                >Каталог</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="contacts.html">Контакты</a>
@@ -47,6 +46,9 @@ shop/images/preview.jpg"
               <a class="site-nav__link" href="index.html#popular">
                 Популярные товары
               </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html"> Оформить заявку </a>
             </li>
           </ul>
         </nav>
@@ -104,54 +106,102 @@ shop/images/preview.jpg"
           <h2>Список товаров</h2>
           <div class="products-grid">
             <article class="product-card product-card--featured">
-              <h3 class="product-card__title">Товар 1</h3>
+              <span class="product-card__badge">Новинка</span>
+              <a href="product.html"
+                ><img class="product-card__image" src="images/product-1.jpg"
+              /></a>
+              <h3 class="product-card__title">
+                <a href="product.html" class="product-card__link">
+                  Наушники накладные чёрные
+                </a>
+              </h3>
               <p class="product-card__description">
-                Краткое описание учебного товара.
+                Bluetooth 5.3, до 100 часов работы, быстрая зарядка USB Type-C.
               </p>
-              <p class="product-card__price">Цена: 1000 руб.</p>
-              <button
-                class="button product-card__button"
-                type="button"
-                data-product="Товар 1"
-              >
-                Заказать
-              </button>
+              <p class="product-card__price">4000 ₽</p>
+              <a href="product.html">
+                <button
+                  class="button product-card__button"
+                  type="button"
+                  data-product="Товар 1"
+                >
+                  Подробнее
+                </button>
+              </a>
             </article>
             <article class="product-card product-card--featured">
-              <h3 class="product-card__title">Товар 2</h3>
+              <a href="product.html"
+                ><img class="product-card__image" src="images/product-2.jpg"
+              /></a>
+              <h3 class="product-card__title">
+                <a href="product.html" class="product-card__link"
+                  >Механическая клавиатура</a
+                >
+              </h3>
               <p class="product-card__description">
-                Краткое описание учебного товара.
+                Компактный формат, подсветка, программируемые клавиши.
               </p>
-              <p class="product-card__price">Цена: 2000 руб.</p>
-              <button
-                class="button product-card__button"
-                type="button"
-                data-product="Товар 2"
-              >
-                Заказать
-              </button>
+              <p class="product-card__price">6000 ₽</p>
+              <a href="product.html">
+                <button
+                  class="button product-card__button"
+                  type="button"
+                  data-product="Товар 2"
+                >
+                  Подробнее
+                </button>
+              </a>
             </article>
             <article class="product-card product-card--featured">
-              <h3 class="product-card__title">Товар 3</h3>
+              <a href="product.html"
+                ><img class="product-card__image" src="images/product-3.jpg"
+              /></a>
+              <h3 class="product-card__title">
+                <a href="product.html" class="product-card__link">Ноутбук</a>
+              </h3>
               <p class="product-card__description">
-                Краткое описание учебного товара.
+                Яркий экран, длительная автономность, быстрый SSD.
               </p>
-              <p class="product-card__price">Цена: 2500 руб.</p>
-              <button
-                class="button product-card__button"
-                type="button"
-                data-product="Товар 3"
-              >
-                Заказать
-              </button>
+              <p class="product-card__price">60 000 ₽</p>
+              <a href="product.html">
+                <button
+                  class="button product-card__button"
+                  type="button"
+                  data-product="Товар 3"
+                >
+                  Подробнее
+                </button>
+              </a>
             </article>
           </div>
         </section>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2026 Учебный проект. Все права защищены.</p>
-      <p>Дисциплина: Фронтенд и бэкенд разработка</p>
+    <footer id="site-footer">
+      <div class="site-footer__inner">
+        <div>
+          <h2 class="site-footer__logo">ShopProject</h2>
+          <p>Учебный интернет-магазин электроники</p>
+        </div>
+        <div class="site-footer__sections">
+          <h2>Разделы</h2>
+          <a class="site-footer__link" href="index.html">Главная</a>
+          <a class="site-footer__link" href="catalog.html">Каталог</a>
+          <a class="site-footer__link" href="order.html">Оформление заявки</a>
+          <a class="site-footer__link" href="contacts.html">Контакты</a>
+        </div>
+        <div>
+          <h2>Связаться с нами</h2>
+          <p>+7 925 726-02-95</p>
+          <p>support@email.com</p>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 — Учебный проект</p>
+      </div>
     </footer>
+    <a href="#top" class="scroll-top" aria-label="Наверх" title="Наверх"
+      ><img class="scroll-top__img" src="images/top.png"
+    /></a>
   </body>
 </html>
